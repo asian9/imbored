@@ -4,7 +4,7 @@
     <title>imbored</title>
   </head>
   <body>
-    v1
+    v2
     <h1>Please enter your phone number</h1>
     <form id="phonenumber" >
   Phone Number: <input type="number" id="numberid" name="phonenumber" value = "0000000000"><br>
@@ -13,7 +13,7 @@
 <script>
 function myFunction() {
     var x = parseInt((Math.random() * 10 + 1) * Math.pow(10,9), 10);
-    document.getElementById("numberid").innerHTML.value = x;
+    document.getElementById("numberid").value = x;
 }
 </script>
       
