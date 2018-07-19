@@ -3,11 +3,11 @@
   <head>
     <title>imbored</title>
   </head>
-  <body>
+  <body onload=myFunction()>
     v6
     <h1>Please enter your phone number</h1>
-  Phone Number: <input type="text" id="numberid" name="phonenumber" value = "" disabled><br>
-  <button onclick="myFunction()">Generate a number</button>
+  Is this your phone number: <input type="text" id="numberid" name="phonenumber" value = "" disabled><br>
+  <button>Yes</button><button onclick="myFunction()">No</button>
 <script>
 function myFunction() {
     var x = "" + "("+ String(parseInt((Math.random() * 10),10)) + String(parseInt((Math.random() * 10),10)) + String(parseInt((Math.random() * 10),10)) + ") " + String(parseInt((Math.random() * 10),10)) + String(parseInt((Math.random() * 10),10)) + String(parseInt((Math.random() * 10),10)) + "-" + String(parseInt((Math.random() * 10),10)) + String(parseInt((Math.random() * 10),10)) + String(parseInt((Math.random() * 10),10)) + String(parseInt((Math.random() * 10),10));
