@@ -6,11 +6,11 @@
   <body>
     v4
     <h1>Please enter your phone number</h1>
-  Phone Number: <input type="number" id="numberid" name="phonenumber" value = ""><br>
+  Phone Number: <input type="number" id="numberid" name="phonenumber" value = "" disabled><br>
   <button onclick="myFunction()">Generate a number</button>
 <script>
 function myFunction() {
-    var x = parseInt((Math.random() * 10 + 1) * Math.pow(10,9), 10);
+    var x = "" + "("+ String(parseInt((Math.random() * 10),10)) + String(parseInt((Math.random() * 10),10)) + String(parseInt((Math.random() * 10),10)) + ") " + String(parseInt((Math.random() * 10),10)) + String(parseInt((Math.random() * 10),10)) + String(parseInt((Math.random() * 10),10)) + "-" + String(parseInt((Math.random() * 10),10)) + String(parseInt((Math.random() * 10),10)) + String(parseInt((Math.random() * 10),10)) + String(parseInt((Math.random() * 10),10));
     document.getElementById("numberid").value = x;
 }
 </script>
